@@ -1,15 +1,14 @@
 {
 	"name": "Discogs Diggr",
-	"description": "foo",
+	"description": "shows videos next to the releases on a store's page",
 	"version": "0.1.0",
 	"manifest_version": 2,
-	"icons": {},
-	"background": {
-		"scripts": ["./background.js"]
+	"icons": {
+		"128": "diggr-logo.png"
 	},
 	"options_page": "./options.html",
 	"browser_action": {
-		"default_popup": "popup.html"
+		"default_popup": "./popup.html"
 	},
 	"permissions": [
 		"tabs",
@@ -21,7 +20,7 @@
 			"https://www.discogs.com/seller/*/profile*"
             ],
         "js": ["./foreground.js"],
-        "run_at": "document_end"
+        "run_at": "document_idle"
         }
     ]
 }
