@@ -4,11 +4,11 @@
 	"version": "0.1.0",
 	"manifest_version": 2,
 	"icons": {
-		"128": "diggr-logo.png"
+		"128": "./assets/diggr-logo.png"
 	},
-	"options_page": "./options.html",
+	"options_page": "./src/html/options.html",
 	"browser_action": {
-		"default_popup": "./popup.html"
+		"default_popup": "./src/html/popup.html"
 	},
 	"permissions": [
 		"tabs",
@@ -19,7 +19,7 @@
         "matches": [
 			"https://www.discogs.com/seller/*/profile*"
             ],
-        "js": ["./foreground.js"],
+        "js": ["./src/js/foreground.js"],
         "run_at": "document_idle"
         }
     ]
