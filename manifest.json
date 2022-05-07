@@ -11,7 +11,6 @@
 		"default_popup": "./src/html/popup.html"
 	},
 	"permissions": [
-		"tabs",
 		"https://www.discogs.com/*"
 	],
 	"content_scripts": [
