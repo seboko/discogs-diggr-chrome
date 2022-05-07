@@ -2,7 +2,7 @@
 	"name": "Discogs Diggr",
 	"description": "shows videos next to the releases on a store's page",
 	"version": "0.1.0",
-	"manifest_version": 2,
+	"manifest_version": 3,
 	"icons": {
 		"128": "./assets/diggr-logo.png"
 	},
