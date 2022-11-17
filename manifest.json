@@ -7,7 +7,7 @@
 		"128": "./assets/diggr-logo.png"
 	},
 	"options_page": "./src/html/options.html",
-	"browser_action": {
+	"action": {
 		"default_popup": "./src/html/popup.html"
 	},
 	"content_scripts": [
@@ -15,7 +15,14 @@
         "matches": [
 			"https://www.discogs.com/seller/*/profile*"
             ],
-        "js": ["./src/js/foreground.js"],
+        "js": ["./src/js/loadVideosOnStorePage.js", "./src/js/ytplayerapi.js"],
+        "run_at": "document_idle"
+        },
+        {
+        "matches": [
+			"https://www.discogs.com/label/*"
+            ],
+        "js": ["./src/js/loadVideosOnLabelPage.js"],
         "run_at": "document_idle"
         }
     ]
