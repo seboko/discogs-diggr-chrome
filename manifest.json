@@ -13,7 +13,7 @@
 	"content_scripts": [
         {
         "matches": [
-			"https://www.discogs.com/*/seller/*/profile*"
+			"https://www.discogs.com/*seller/*/profile*"
             ],
         "js": ["./src/js/foreground.js"],
         "run_at": "document_idle"
